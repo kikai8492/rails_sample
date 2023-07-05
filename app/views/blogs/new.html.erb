@@ -1,0 +1,12 @@
+<%# <img src=https://t.gyazo.com/teams/diveintocode/0701a27fe0a1d8d7023cf8e91ec91edc.png width=240> %>
+<%= form_with(model: Blog.new, local: true) do |form| %>
+  <div class="blog_title">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+  <div class="blog_content">
+    <%= form.label :content %>
+    <%= form.text_field :content %>
+  </div>
+  <%= form.submit %>
+<% end %>
