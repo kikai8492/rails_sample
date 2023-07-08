@@ -2,6 +2,7 @@ class BlogsController < ApplicationController
 
   def index
     @blogs = Blog.all #Blogの中にあるすべてのレコードを出力します
+    binding.pry
   end
 
   def new
